@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pobieranie cheatów</title>
+    <style>
+        /* Reset domyślnych marginesów */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        /* Kontener centrujący na całym ekranie */
+        .center-container {
+            display: flex;
+            justify-content: center; /* Centrowanie w poziomie */
+            align-items: center;     /* Centrowanie w pionie */
+            height: 100vh;           /* 100% wysokości okna przeglądarki */
+        }
+
+        /* Stylizacja przycisku pobierania */
+        .download-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #007BFF; /* Niebieski kolor */
+            text-decoration: none;     /* Usunięcie podkreślenia tekstu */
+            border-radius: 8px;        /* Zaokrąglone rogi */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Delikatny cień */
+            transition: background-color 0.2s, transform 0.1s;
+        }
+
+        /* Efekt po najechaniu myszką */
+        .download-btn:hover {
+            background-color: #0056b3; /* Ciemniejszy niebieski */
+            transform: translateY(-2px); /* Lekkie uniesienie */
+        }
+
+        /* Efekt po kliknięciu */
+        .download-btn:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="center-container">
+        <!-- Pamiętaj o zmianie program.zip na nazwę swojego pliku -->
+        <a href="cheaty.exe" download class="download-btn">Pobierz cheaty</a>
+    </div>
+
+</body>
+</html>
